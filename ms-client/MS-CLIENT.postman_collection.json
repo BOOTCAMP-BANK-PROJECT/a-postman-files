@@ -6,16 +6,16 @@
 	},
 	"item": [
 		{
-			"name": "Client",
+			"name": "Enterprise Clients",
 			"item": [
 				{
-					"name": "Create a Client",
+					"name": "New enterprise client",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Samuel\",\r\n    \"documentNumber\": 71514619,\r\n    \"documentType\": \"DNI\"\r\n}",
+							"raw": "{\r\n    \"ruc\": \"18896748775\",\r\n    \"companyName\": \"Globant\",\r\n    \"legalResidence\": \"Buenos Aires, Argentina\",\r\n    \"accounts\": [ ],\r\n    \"fk_insertionUser\": \"postman-client\",\r\n    \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,51 +23,236 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/client",
+							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"gateway-service",
+								"eastus",
+								"azurecontainer",
+								"io"
 							],
-							"port": "3000",
 							"path": [
-								"client"
+								"client",
+								"enterprise"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Tesla Motors",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ruc\": \"18273948125\",\r\n    \"companyName\": \"Tesla Motors\",\r\n    \"legalResidence\": \"San Carlos, California, Estados Unidos\",\r\n    \"accounts\": [ ],\r\n    \"fk_insertionUser\": \"postman-client\",\r\n    \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/client/enterprise",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"client",
+										"enterprise"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Microsoft",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ruc\": \"18835948125\",\r\n    \"companyName\": \"Microsoft Corporation\",\r\n    \"legalResidence\": \"Redmond, Washington, Estados Unidos\",\r\n    \"accounts\": [ ],\r\n    \"fk_insertionUser\": \"postman-client\",\r\n    \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/client/enterprise",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"client",
+										"enterprise"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "NTT DATA",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ruc\": \"18896748125\",\r\n    \"companyName\": \"NTT DATA Corporation\",\r\n    \"legalResidence\": \"Kōtō, Tokio, Japón\",\r\n    \"accounts\": [ ],\r\n    \"fk_insertionUser\": \"postman-client\",\r\n    \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/client/enterprise",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"client",
+										"enterprise"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Indra",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ruc\": \"18835945625\",\r\n    \"companyName\": \"Indra Sistemas, S.A.\",\r\n    \"legalResidence\": \"Alcobendas, España\",\r\n    \"accounts\": [ ],\r\n    \"fk_insertionUser\": \"postman-client\",\r\n    \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/client/enterprise",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"client",
+										"enterprise"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Globant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ruc\": \"18896748775\",\r\n    \"companyName\": \"Globant\",\r\n    \"legalResidence\": \"Buenos Aires, Argentina\",\r\n    \"accounts\": [ ],\r\n    \"fk_insertionUser\": \"postman-client\",\r\n    \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/client/enterprise",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"client",
+										"enterprise"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "List enterprise clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
+							"protocol": "http",
+							"host": [
+								"gateway-service",
+								"eastus",
+								"azurecontainer",
+								"io"
+							],
+							"path": [
+								"client",
+								"enterprise"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "List Clients",
+					"name": "List enterprise client by Id",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/client",
+							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise/6269bff4184a945a394232c5",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"gateway-service",
+								"eastus",
+								"azurecontainer",
+								"io"
 							],
-							"port": "3000",
 							"path": [
-								"client"
+								"client",
+								"enterprise",
+								"6269bff4184a945a394232c5"
 							]
 						}
 					},
 					"response": []
-				}
-			]
-		},
-		{
-			"name": "Agency",
-			"item": [
+				},
 				{
-					"name": "Create an Agency",
+					"name": "Update enterprise client",
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Agencia Lima Sur\",\r\n  \"description\": \"Agencia de Lima Sur\",\r\n  \"abbreviation\": \"LIMA-SUR\",\r\n  \"registrationStatus\": 1,\r\n  \"insertionDate\": \"2022-04-10T14:08:25.956Z\",\r\n  \"fk_insertionUser\": \"samuellm\",\r\n  \"insertionTerminal\": \"LIM-GQRY4H6\"\r\n}",
+							"raw": "{\r\n  \"id\": \"6269c3397a315801771a4645\",\r\n  \"ruc\": \"18896748775\",\r\n  \"legalResidence\": \"Buenos Aires, Argentina\",\r\n  \"accounts\": [\r\n    {\r\n      \"accountId\": \"6269c3397a315801881a4645\",\r\n      \"accountType\": \"PASSIVE\",\r\n      \"accountUrl\": \"/enterprise/passive/current_account\",\r\n      \"accountIsoCurrencyCode\": \"PEN\",\r\n      \"accountInsertionDate\": \"2022-04-27T22:29:12.321Z\",\r\n      \"accountFk_insertionUser\": \"postman-client\",\r\n      \"accountInsertionTerminal\": \"LIM-GK5Z2\"\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -75,98 +260,30 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/agency",
+							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"gateway-service",
+								"eastus",
+								"azurecontainer",
+								"io"
 							],
-							"port": "3000",
 							"path": [
-								"agency"
+								"client",
+								"enterprise"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "List Agencies",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/agency",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"agency"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Client Category",
-			"item": [
-				{
-					"name": "List Client Categories",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/client_category",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"client_category"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create a Client Category",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Registro Unico de Contribuyente\",\r\n  \"description\": \"Empresa dentro de Perú.\",\r\n  \"abbreviation\": \"RUC\",\r\n  \"minLength\": 11,\r\n  \"maxLength\": 11,\r\n  \"registrationStatus\": 1,\r\n  \"insertionDate\": \"2022-04-10T15:33:53.081Z\",\r\n  \"fk_insertionUser\": \"samuellm\",\r\n  \"insertionTerminal\": \"LIM-GQRY4H6\"\r\n},\r\n{\r\n  \"name\": \"Carnet de Extranjería\",\r\n  \"description\": \"CE de ciudadano extranjero residente en Perú.\",\r\n  \"abbreviation\": \"CE\",\r\n  \"minLength\": 12,\r\n  \"maxLength\": 12,\r\n  \"registrationStatus\": 1,\r\n  \"insertionDate\": \"2022-04-10T15:33:53.081Z\",\r\n  \"fk_insertionUser\": \"samuellm\",\r\n  \"insertionTerminal\": \"LIM-GQRY4H6\"\r\n},\r\n{\r\n  \"name\": \"Documento Nacional de Identidad\",\r\n  \"description\": \"DNI de un ciudadano peruano.\",\r\n  \"abbreviation\": \"DNI\",\r\n  \"minLength\": 8,\r\n  \"maxLength\": 8,\r\n  \"registrationStatus\": 1,\r\n  \"insertionDate\": \"2022-04-10T15:33:53.081Z\",\r\n  \"fk_insertionUser\": \"samuellm\",\r\n  \"insertionTerminal\": \"LIM-GQRY4H6\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/client_category",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"client_category"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete a Client Category",
+					"name": "Delete enterprise client",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": \"62544d2a4c1e6e18f3574e45\"\r\n}",
+							"raw": "{\r\n  \"id\": \"6269fdfb7a315801771a4646\",\r\n  \"ruc\": \"18273948125\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -174,20 +291,88 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/client_category",
+							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"gateway-service",
+								"eastus",
+								"azurecontainer",
+								"io"
 							],
-							"port": "3000",
 							"path": [
-								"client_category"
+								"client",
+								"enterprise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add enterprise client accounts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"6269bff4184a945a394232c5\",\r\n  \"ruc\": \"18835948125\",\r\n  \"accounts\": [\r\n    {\r\n      \"accountId\": \"6269bff4184a9a8c0d9\",\r\n      \"accountType\": \"ACTIVE\",\r\n      \"accountUrl\": \"/enterprise/active/loan\",\r\n      \"accountIsoCurrencyCode\": \"USD\",\r\n      \"accountInsertionDate\": \"2022-04-28T02:39:24.557Z\",\r\n      \"accountFk_insertionUser\": \"postman-client\",\r\n      \"accountInsertionTerminal\": \"LIM-GK5Z2\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise/accounts",
+							"protocol": "http",
+							"host": [
+								"gateway-service",
+								"eastus",
+								"azurecontainer",
+								"io"
+							],
+							"path": [
+								"client",
+								"enterprise",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List enterprise client by Ruc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise/find?ruc=18835948125",
+							"protocol": "http",
+							"host": [
+								"gateway-service",
+								"eastus",
+								"azurecontainer",
+								"io"
+							],
+							"path": [
+								"client",
+								"enterprise",
+								"find"
+							],
+							"query": [
+								{
+									"key": "ruc",
+									"value": "18835948125"
+								}
 							]
 						}
 					},
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Personal Clients",
+			"item": []
 		}
 	]
 }
