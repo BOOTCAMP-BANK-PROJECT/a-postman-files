@@ -23,13 +23,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
-							"protocol": "http",
+							"raw": "{{api_url}}/client/enterprise",
 							"host": [
-								"gateway-service",
-								"eastus",
-								"azurecontainer",
-								"io"
+								"{{api_url}}"
 							],
 							"path": [
 								"client",
@@ -206,13 +202,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
-							"protocol": "http",
+							"raw": "{{api_url}}/client/enterprise",
 							"host": [
-								"gateway-service",
-								"eastus",
-								"azurecontainer",
-								"io"
+								"{{api_url}}"
 							],
 							"path": [
 								"client",
@@ -228,13 +220,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise/6269bff4184a945a394232c5",
-							"protocol": "http",
+							"raw": "{{api_url}}/client/enterprise/6269bff4184a945a394232c5",
 							"host": [
-								"gateway-service",
-								"eastus",
-								"azurecontainer",
-								"io"
+								"{{api_url}}"
 							],
 							"path": [
 								"client",
@@ -260,13 +248,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
-							"protocol": "http",
+							"raw": "{{api_url}}/client/enterprise",
 							"host": [
-								"gateway-service",
-								"eastus",
-								"azurecontainer",
-								"io"
+								"{{api_url}}"
 							],
 							"path": [
 								"client",
@@ -291,13 +275,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise",
-							"protocol": "http",
+							"raw": "{{api_url}}/client/enterprise",
 							"host": [
-								"gateway-service",
-								"eastus",
-								"azurecontainer",
-								"io"
+								"{{api_url}}"
 							],
 							"path": [
 								"client",
@@ -322,13 +302,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise/accounts",
-							"protocol": "http",
+							"raw": "{{api_url}}/client/enterprise/accounts",
 							"host": [
-								"gateway-service",
-								"eastus",
-								"azurecontainer",
-								"io"
+								"{{api_url}}"
 							],
 							"path": [
 								"client",
@@ -345,13 +321,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://gateway-service.eastus.azurecontainer.io/client/enterprise/find?ruc=18835948125",
-							"protocol": "http",
+							"raw": "{{api_url}}/client/enterprise/find?ruc=18835948125",
 							"host": [
-								"gateway-service",
-								"eastus",
-								"azurecontainer",
-								"io"
+								"{{api_url}}"
 							],
 							"path": [
 								"client",
@@ -372,7 +344,346 @@
 		},
 		{
 			"name": "Personal Clients",
-			"item": []
+			"item": [
+				{
+					"name": "New personal client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"documentType\": \"CE\",\r\n  \"documentNumber\": \"615046803\",\r\n  \"firstName\": \"Adriana\",\r\n  \"lastName\": \"Hernandez Lopez\",\r\n  \"residenceAddress\": \"Las flores\",\r\n  \"accounts\": [ ],\r\n  \"fk_insertionUser\": \"postman-client\",\r\n  \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/client/personal",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"client",
+								"personal"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Pepito Primero",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"documentType\": \"DNI\",\r\n  \"documentNumber\": \"71604509\",\r\n  \"firstName\": \"Pepito Primero\",\r\n  \"lastName\": \"Suarez Rodriguez\",\r\n  \"residenceAddress\": \"Las acacias\",\r\n  \"accounts\": [ ],\r\n  \"fk_insertionUser\": \"postman-client\",\r\n  \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/client/personal",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"client",
+										"personal"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Pepito Segundo",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"documentType\": \"DNI\",\r\n  \"documentNumber\": \"71604510\",\r\n  \"firstName\": \"Pepito Segundo\",\r\n  \"lastName\": \"Suarez Rodriguez\",\r\n  \"residenceAddress\": \"Las acacias\",\r\n  \"accounts\": [ ],\r\n  \"fk_insertionUser\": \"postman-client\",\r\n  \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/client/personal",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"client",
+										"personal"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Daniela",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"documentType\": \"DNI\",\r\n  \"documentNumber\": \"71604605\",\r\n  \"firstName\": \"Daniela\",\r\n  \"lastName\": \"Perez Ramirez\",\r\n  \"residenceAddress\": \"Las gardenias\",\r\n  \"accounts\": [ ],\r\n  \"fk_insertionUser\": \"postman-client\",\r\n  \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/client/personal",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"client",
+										"personal"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Adriana",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"documentType\": \"CE\",\r\n  \"documentNumber\": \"615046803\",\r\n  \"firstName\": \"Adriana\",\r\n  \"lastName\": \"Hernandez Lopez\",\r\n  \"residenceAddress\": \"Las flores\",\r\n  \"accounts\": [ ],\r\n  \"fk_insertionUser\": \"postman-client\",\r\n  \"insertionTerminal\": \"LIM-GK5Z2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/client/personal",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"client",
+										"personal"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "List personal clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/client/personal",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"client",
+								"personal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List personal client by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/client/personal/626b6977fb680d439ed34f45",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"client",
+								"personal",
+								"626b6977fb680d439ed34f45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update personal client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"626b2053ad42f83f0c443e14\",\r\n        \"documentType\": \"CE\",\r\n        \"documentNumber\": \"615046803\",\r\n        \"firstName\": \"Adriana\",\r\n        \"lastName\": \"Hernandez Lopez\",\r\n        \"residenceAddress\": \"Las flores\",\r\n        \"accounts\": [],\r\n        \"registrationStatus\": 1,\r\n        \"insertionDate\": \"2022-04-28T23:16:35.949+00:00\",\r\n        \"fk_insertionUser\": \"postman-client\",\r\n        \"insertionTerminal\": \"LIM-GK5Z2\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/client/personal",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"client",
+								"personal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete personal client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"documentNumber\": \"615046803\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/client/personal",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"client",
+								"personal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add personal client accounts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"documentNumber\": \"71604509\",\r\n  \"accounts\": [\r\n    {\r\n      \"accountId\": \"6269bff4184a9a8c0d9\",\r\n      \"accountType\": \"ACTIVE\",\r\n      \"accountUrl\": \"/personal/active/loan\",\r\n      \"accountIsoCurrencyCode\": \"USD\",\r\n      \"accountInsertionDate\": \"2022-04-28T02:39:24.557Z\",\r\n      \"accountFk_insertionUser\": \"postman-client\",\r\n      \"accountInsertionTerminal\": \"LIM-GK5Z2\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/client/personal/accounts",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"client",
+								"personal",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List personal client by Ruc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/client/personal/find?documentNumber=71604510",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"client",
+								"personal",
+								"find"
+							],
+							"query": [
+								{
+									"key": "documentNumber",
+									"value": "71604510"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"//Local Environment",
+					"pm.globals.set(\"api_url\", \"http://localhost:3000\");",
+					"",
+					"//Production Environment",
+					"/*",
+					"pm.globals.set(\"api_url\", \"http://gateway-service.eastus.azurecontainer.io\");",
+					"*/"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
